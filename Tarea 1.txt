@@ -1,0 +1,31 @@
+peticiones de api a curl:
+curl https://{{mysubdomain}}.zendesk.com/api/v2/incremental/tickets.json?start_time=1&include=metric_sets -v -u {{myname@mydomain.com}}:{{mypassword}}
+ 
+Malo: -u sa! Sa
+
+Bueno: -u sa \! Sa
+
+curl -i -X POST 'https://graph.facebook.com/me?batch=   
+  [
+    {
+      "method":"GET",
+      "relative_url":"{page-a-id}"
+    },  
+    {
+      "method":"GET",
+      "relative_url":"{page-b-id}"
+    }
+  ]
+  &include_headers=false             
+  &access_token={access-token}'
+
+peticiones de api a python:
+
+import requests
+resp = requests.get('https://www.google.com/')
+print(resp)
+
+import requests
+auth_data = {'email': 'juanjo@j2logo.com', 'pass': '1234'}
+resp = requests.post('https://mipagina.xyz/login/', data=auth_data)
+print(resp)
