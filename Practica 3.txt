@@ -1,0 +1,77 @@
+Programa de bash:
+Variable:
+valores=valor
+echo $valores
+me devuelve valor
+
+El if:
+if [[ $a > $b ]]
+then
+    echo "mayor"
+elif [[ $b > $c ]]
+then
+    echo "lo que sea"
+else
+    echo "nada de lo anterior"
+fi
+ Yo a "a" le puse que era igual a 10 y a "b" le puse que era 119
+
+ y por como no cumplia se salto a la siguiente opcion lo que sea 
+
+Ciclo:
+Yo hice un while :
+i=0
+while [ $i -lt 1000 ]
+do
+    echo 'hola buenos dias maestro, o buenas tardes o buenas noches, feliz dia :).'
+    ((i++))
+done
+
+La funcion: 
+Yo lo que hice fue algo sencillo
+mi_primera_funcion(){
+ echo Hola Mundo
+}
+Y para llamarla me imprimio  : "Hola Mundo"
+
+------------------------------------------------------------------------------------------------------------------------------------------
+programa en powershell:
+Declarar una variable:
+$hola="hola mundo"
+ 
+y para llamar la variable le puse :
+
+$hola 
+ y imprimio : "hola mundo"
+
+La condicional if:
+$avlue=0
+if ( $value -gt 5 )
+{
+    echo "Hola, como esta?"
+}
+
+Ciclo While: 
+
+PS> while($val -ne 10) {
+
+$val+++
+
+      $valor
+
+}
+
+Y ppor ultimo la funcion:
+
+Hice una funcion en donde hace una suma
+
+Function Get-Suma {
+param(
+$Numero1, $Numero2
+)
+
+$Resultado = $Numero1 + $Numero2
+Write-host $Resultado
+}
+
+Get-Suma -Numero1 8 -Numero2 12
