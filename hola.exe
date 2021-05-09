@@ -1,0 +1,9 @@
+import time
+
+print("!Hola Mundo!")
+
+nombre = input("¿Cómo te llamas?:")
+
+print("Saludos", nombre)
+
+time.sleep(10)
